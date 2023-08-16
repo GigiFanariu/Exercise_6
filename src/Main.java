@@ -1,14 +1,13 @@
-import java.awt.image.BandCombineOp;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         String string1 = "Hello";
-        String string2 = "How are you?";
-        ArrayList<String> charArray = new ArrayList<>(0);
-        charArray.add("heu?");
-        System.out.println(charArray);
+        String string2 = "How are you";
 
+        String firstChars = string1.substring(0, 2);
+        String lastChars = string2.substring(string2.length() - 2);
+
+        String charArray = firstChars + lastChars;
+
+        System.out.println(charArray);
     }
 }
